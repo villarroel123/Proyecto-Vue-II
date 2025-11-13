@@ -17,7 +17,7 @@ const cancionesStore=usecancionesStore();
 const {cancionesFavoritas}=storeToRefs(cancionesStore);
 const {cancionstore}=cancionesStore;
 
-//----ESTILOS
+//---ESTILOS
 const estilos={
         Enojo:{
             titulo:'titulo-rojo',
@@ -45,17 +45,14 @@ const estilos={
             borde:'borde-amarillo'
         }
 }
-
 const emocionEstilo=(emocion)=>{
     return estilos[emocion];
 }
-
 //-----MODALL-------
 const modal=ref(false)
 const notaseleccionada=reactive({
   emocion:"",
   texto:""
-
 })
 const openModal=(emocion,texto)=>{
     modal.value=true;
@@ -146,13 +143,13 @@ if(seleccion==='anotaciones'){
                 </article>
             </div>
             <div class="contenedor-registro" v-if="filtroCanciones">
-                <article v-for="(cancion,index) in cancionesFavoritas" :key="index" class="contenedor-frases flex align-justify efecto2 ">
+                <article v-for="(cancion,index) in cancionesFavoritas" :key="index" class="contenedor-canciones flex align-justify efecto2 ">
                    <div>
-                        <img></img>
+                        <img :src="cancion.imagen" :alt="cancion.nombre" class="imagen">
                    </div>
                    <div>
-                        <h4>{{ cancion.name }}</h4>
-                        <h5></h5>
+                        <h4>{{ cancion.nombre }}</h4>
+                        <h5>{{ cancion.artista }}</h5>
                    </div>
                     
                 </article>
@@ -166,9 +163,14 @@ if(seleccion==='anotaciones'){
 </template>
 
 <style scoped>
+.contenedor-canciones{
+    padding: 4em;
+}
+
+
+
 .contenedor-frases{
     padding: 4em;
-    
     border: 1px solid transparent;
     margin: 1.4em;
     border-radius: 2em;

@@ -18,8 +18,7 @@ cancionesStore.ObtenerCancionPorEmocion(emocion)
 cambiofondo.value=emocion;
 opcionseleccionada.value=true;
 
-//para el grafico
-cancionesStore.registroEmocion(emocion)
+cancionesStore.registroEmocion(emocion)//--para el grafico
 
 //para los colores del circulo/titulo de cada emocion, evaluo la emocion que se ingresa y en base a eso le agrego un valor a la variable reactiva, el valor de una clase
 if(emocion==='Felicidad'){
@@ -34,20 +33,19 @@ colorcirculo.value='circuloamarillo';
   colorcirculo.value='circulovioleta'
 }
 }
-//
-const cancionFav=ref({
-  
+//--------PARA CANCIONES FAVORITAS--------//
+const guardoFav=(cancion)=>{
+  //ingreso datos de la cancion seleccionada
+  const cancionFav=reactive({
+    nombre:cancion.name,
+    artista:cancion.artist,
+    imagen:cancion.image 
 })
-
-
-
-const cancionBitacora=(cancion)=>{
-  cancionesStore.cancionFavorita(cancion);
-
-
-
+//guardo en el store
+  cancionesStore.cancionFavorita(cancionFav);
 }
-//MODALL
+
+//.-------------MODALL--------------//
 const modal=ref(false)
 const cancionseleccionada=reactive({
   name:"",
@@ -64,7 +62,7 @@ const abreModal=(cancion)=>{
 const cierraModal=()=>{
   modal.value=false;
 }
-//video
+//------video de youtube-------
 const getEmbedUrl = (url) => {
   let videoId = '';
     if (url.includes('youtu.be/')) {
@@ -78,7 +76,7 @@ const getEmbedUrl = (url) => {
 }
 }
 
-//PARA CIRCULOS
+//--------PARA CIRCULOS------
 const hover1=ref()
 const hover2=ref()
 const hover3=ref()
@@ -176,7 +174,7 @@ const hover5=ref()
               <div class="datos libre">
                 <div class="flex dato-titulo">
                   <h4 class="datos-h4">{{ cancion.name }}</h4>
-                  <i class="fa-solid fa-heart " @click="cancionFav(cancion)"></i>
+                  <i class="fa-solid fa-heart " @click="guardoFav(cancion)"></i>
                 </div>
                 <h5>{{ cancion.artist }}</h5>
                 <div class=" boton-escuchar" :class="cambiofondo">

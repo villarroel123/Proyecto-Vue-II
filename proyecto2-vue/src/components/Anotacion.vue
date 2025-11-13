@@ -279,7 +279,7 @@ margin:1em;
     margin-top:2em;
     border-radius:0.5em;
     border:none;
-    padding:0.3em 3em;
+    padding:0.6em 4em;
     color:var(--color-blanco);
     cursor: pointer;
 }
