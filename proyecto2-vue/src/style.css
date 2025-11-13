@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 	--borde-notarojo: 0.1em solid #2B0000;
 	--borde-notanaranja: 0.1em solid #A82F03;
 	--borde-notavioleta:0.1em solid #271B40;
-
+    --borde-notablanca:0.1em solid #FFF5FC;
   /*circulos*/
   --circulo-amarillo:radial-gradient(
     circle 40em,

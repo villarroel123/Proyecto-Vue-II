@@ -155,7 +155,7 @@ const cambiocolor4=()=>{
                 <p class="error libre">{{ errors.youtube }}</p>
 
 
-                <label for="image" class="nombre-input input-file">Ingresa imagen de portada</label>
+                <label for="image" class="nombre-input input-file">Ingresa imagen de álbum(640x640)</label>
                 <input type="file" v-bind="imageAttrs" @change="e=>image=e.target.files" id="image" name="image">
 
                 <p class="error libre">{{ errors.image }}</p>
@@ -236,11 +236,11 @@ background-image: url("/imagenes/fondo-form.jpg");
     background-color: #6f32d1;
 }
 .nombre-input{
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 0.3em;
     font-family: "Signika", sans-serif;
     font-optical-sizing: auto;
-    font-weight: normal;
+    font-weight: 100;
     font-style: normal;
     font-variation-settings:"GRAD" 0;
     color: #FFF5FC;
@@ -257,7 +257,7 @@ background-image: url("/imagenes/fondo-form.jpg");
     font-weight: normal;
     font-style: normal;
     font-variation-settings:"GRAD" 0;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 /*.input-file-hidden{

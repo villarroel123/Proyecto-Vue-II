@@ -85,7 +85,7 @@ const agregarFav=()=>{
 }
 .boton i{
     margin:0.5em;
-    font-size:2.5em;
+    font-size:3.5em;
     color:#AA8BE9;
     cursor: pointer;
 }

@@ -214,7 +214,7 @@ color:var(--color-azul);
 }
 .slider-title{
     margin: 0.5em;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 100;
 }
 
@@ -238,7 +238,7 @@ color:var(--color-azul);
 }
 .emocion i{
 margin:1em;
-font-size:2em;
+font-size:2.5em;
 cursor: pointer;
 }
 
@@ -249,14 +249,14 @@ cursor: pointer;
     width:15em;
 }
 .boton-emocion i{
-font-size:1.5em;
+font-size:1.8em;
 margin:1em;
 
 
 }
 .pregunta{
     margin-top:1em;
-    font-size:4em;
+    font-size:5em;
     margin-bottom:1em;
     text-align:center;
 }
@@ -276,13 +276,18 @@ margin:1em;
     padding:1em;
 }
 .boton-envio{
+    font-size: 1.5em;
     margin-top:2em;
     border-radius:0.5em;
     border:none;
-    padding:0.6em 4em;
+    padding:0.4em 2em;
     color:var(--color-blanco);
     cursor: pointer;
 }
+.boton-envio:hover{
+    transform: scale(1.1);
+}
+
 .error{
     margin-top:0.5em;
 }

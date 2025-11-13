@@ -89,9 +89,11 @@ if(seleccion==='anotaciones'){
 <template>
 
 <div v-if="modal" @click.self="closeModal" class="modal-container flex align-justify">
-  <div class="modal">
-    <h4 class="titulo-cancion inconsolata">{{ notaseleccionada.emocion }}</h4>
-    <p>{{ notaseleccionada.texto }}</p>
+  <div class="modal":class="emocionEstilo(notaseleccionada.emocion).color">
+        <h4 class="titulo-nota inconsolata">Siento {{ notaseleccionada.emocion }}</h4>
+        <div class="nota-modal">
+            <p :class="emocionEstilo(notaseleccionada.emocion).titulo">{{ notaseleccionada.texto }}</p>
+        </div>
   </div>
 </div>
 <!--FIN MODAL-->
@@ -161,8 +163,6 @@ if(seleccion==='anotaciones'){
             
     </div>
 </section>
-
-
 </template>
 
 <style scoped>
@@ -172,25 +172,23 @@ if(seleccion==='anotaciones'){
     overflow: hidden;
     border-radius: 2em;
     object-fit: cover;
-    border: 1px solid transparent;
     justify-content: space-between;
 }
-
 .imagen-cancion{
     height: 18vh;
 }
 .container-nombre{
+    color: var(--color-violeta);
     width: 80%;
     padding: 0 3em;
 }
 .container-nombre h4{
-    font-size: 4em;
+    font-size: 3em;
 }
 .container-nombre h5{
     font-size: 3em;
     font-weight: 100;
 }
-
 /*Solo para una card */
 .contenedor-registro .contenedor-canciones:only-child {
     width: 80%; 
@@ -216,7 +214,6 @@ if(seleccion==='anotaciones'){
 .contenedor-registro .contenedor-canciones:only-child .container-nombre h5 {
     font-size: 3em;    
 }
-
 
 /*-------------FRASES------- */
 .contenedor-frases{
@@ -266,6 +263,7 @@ justify-content: space-between;
 .item:hover{
     color:var(--color-violeta);
 }
+
 .nombre{
     font-size: 3em;
     color: var(--color-blanco);
@@ -286,15 +284,34 @@ justify-content: space-between;
   z-index: 100;
 }
 .modal{
+
+    width: 40%;
+    
+    padding: 4em;
+  border-radius: 2em;
   width: 40%;
-   background-color: white;
-  padding: 2em;
-  border-radius: 1em;
-  width: 40%;
-  max-width: 600px;
+  
+  max-width: 80em;
   text-align: center;
   box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
+
+.nota-modal{
+    background-color: var(--color-blanco);
+    padding: 2em;
+    border-radius: 1em;
+    font-size: 3em;
+    font-weight: 100;
+    color: var(--color-euforia);
+    
+}
+.titulo-nota{
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: var(--color-blanco);
+}
+
+
 
 /*Euforia */
 .boton-euforia{

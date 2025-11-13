@@ -48,8 +48,6 @@ const cancionFavorita=(cancion)=>{
 const ObtenerCancionPorEmocion= (emocion)=>{
     //canciones por emocion
     const cancionPorEmocion=cancionesPorEmocion[emocion]//json
-    //guardo el registro de emociones
-    registroEmocion(emocion)
     //para las canciones guardadas con el localstorage
     let cancionesguardadas=localStorage.getItem("CancionesAgregadas")//busca si hay
     let guardadas=[];//para guardar las canciones por emocion

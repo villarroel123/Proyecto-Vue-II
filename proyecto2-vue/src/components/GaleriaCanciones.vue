@@ -97,7 +97,7 @@ const hover5=ref()
 </div>
 <!--FIN MODAL-->
 
-<section class="section-botones flex align-justify" >
+<section class="section-botones flex align-justify" id="section-boton" >
   <div class="botones-container">
     <h3 class="pregunta inconsolata">¿Qué emoción sentis?</h3>
     <p class="parrafo sifnika">Selecciona la opción con la que más te identifiques en este momento y abajo se desplegará una lista de recomendaciones de canciones.</p>
@@ -107,35 +107,35 @@ const hover5=ref()
               <div class="mini-circulo flex align-justify circulo-alegria" :class="{'hover-amarillo':hover1, 'icono-amarillo':hover1}">
                 <div class="overlay-container-cir" >
                     <div class="overlay-circulo flex align-justify">
-                      
+                      <img src="/imagenes/carita-feliz.svg">
                     </div>
                 </div>    
                 </div>
                 <div class="mini-circulo flex align-justify circulo-enojo " :class="{'hover-rojo':hover3, 'icono-rojo':hover3}">
                     <div class="overlay-container-cir">
                         <div class="overlay-circulo flex align-justify">
-                          
+                            <img src="/imagenes/carita-enojada.svg">
                         </div>
                     </div>
                 </div>
                 <div class="mini-circulo flex align-justify circulo-euforia" :class="{'hover-morado':hover5, 'icono-morado':hover5}">
                     <div class="overlay-container-cir">
                       <div class="overlay-circulo flex align-justify">
-                    
+                          <img src="/imagenes/carita-euforia.svg">
                       </div>
                     </div>
                 </div>
                 <div class="mini-circulo flex align-justify circulo-tristeza" :class="{'hover-azul':hover2, 'icono-azul':hover2}">
                     <div class="overlay-container-cir">
                         <div class="overlay-circulo flex align-justify">
-                    
+                            <img src="/imagenes/carita-triste.svg">
                         </div>
                     </div>
                 </div>
                 <div class="mini-circulo flex align-justify circulo-calma" :class="{'hover-rosa':hover4, 'icono-rosa':hover4}">
                     <div class="overlay-container-cir">
                         <div class="overlay-circulo flex align-justify">
-                    
+                            <img src="/imagenes/carita-calma.svg">
                         </div>
                     </div>
                 </div>
@@ -205,13 +205,16 @@ const hover5=ref()
   width: 40%;
 }
 .titulo-cancion{
-   font-size: 3.5em;
-    margin-bottom: 0.5em;
+   font-size: 4em;
+    margin-bottom: 0.2em;
+    color: var(--color-blanco);
     
 }
 .artista-cancion{
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 100;
   margin-bottom: 1em;
+  color: var(--color-blanco);
   
 }
 .video{
@@ -586,19 +589,21 @@ width: 80%;/*su ancho para margen*/
   position: absolute;
   top:0;
   left:0;
-  background-color:rgba(0, 0, 255, 0.8);
   transition: 0.6s ease;
   opacity: 0;
   width: 100%;
   height: 100%;
 }
+
 .icono-amarillo .overlay-circulo{
+    background-color:var(--color-amarillo);
     opacity:1;
   }
 .hover-amarillo{
 transform: scale(1.3);
 }
 .icono-azul .overlay-circulo{
+    background-color:var(--color-azul);
     opacity:1;
   }
 .hover-azul{

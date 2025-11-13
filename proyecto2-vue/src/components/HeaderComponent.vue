@@ -28,9 +28,6 @@ onUnmounted(() => {
                     <router-link class="link" :to="{name:'home'}">Home</router-link><!--carga la pagina home-->
                 </li>
                 <li class="item">
-                    <router-link class="link" :to="{name:'grafico'}">Grafico</router-link><!--carga la pagina home-->
-                </li>
-                <li class="item">
                     <router-link class="link" :to="{name:'musica'}">Música</router-link><!--carga la pagina home-->
                 </li>
                 <li class="item">

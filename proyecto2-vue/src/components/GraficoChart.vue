@@ -89,7 +89,7 @@ const chartOptions = {
 </template>
 <style scoped>
 .section-grafico{
-  background-image: url("/imagenes/fondo-grafico.jpg");
+  background-image: url("/imagenes/fondo-grafico.png");
   padding: 5em;
   height: 100vh;
   flex-direction: column;
@@ -118,13 +118,15 @@ font-size: 7em;
   font-weight: 100;
 }
 .historial{
-  color: var(--color-euforia);
+  color: var(--color-violeta);
   font-weight: 100;
+  border-bottom:  var(--borde-notablanca);
 }
 .emociones{
   margin: 0 0.2em;
   color: var(--color-blanco);
   font-weight: 100;
+  border-bottom:  var(--borde-notavioleta);
 }
 .registro{
   font-weight: 100;
@@ -133,7 +135,7 @@ font-size: 7em;
 .emocional{
   margin: 0 0.2em;
   font-weight: 100;
-  color: var(--color-euforia);
+  color: var(--color-violeta);
 }
 .efecto{
   background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));

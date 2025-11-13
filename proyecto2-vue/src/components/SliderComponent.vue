@@ -8,9 +8,7 @@
             <h1 class="titulo">Bienvenidos a Fellings</h1>
             <p class="parrafo">Cuéntanos como te sientes hoy
             y nuestra música te acompañará</p>
-            <div class="comenzar">
-                <h3>Comenzar</h3>
-            </div>
+           
         </div>
         
     </div>
