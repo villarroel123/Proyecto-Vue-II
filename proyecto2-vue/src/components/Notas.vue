@@ -145,11 +145,14 @@ if(seleccion==='anotaciones'){
             <div class="contenedor-registro" v-if="filtroCanciones">
                 <article v-for="(cancion,index) in cancionesFavoritas" :key="index" class="contenedor-canciones flex align-justify efecto2 ">
                    <div>
-                        <img :src="cancion.imagen" :alt="cancion.nombre" class="imagen">
+                        <img :src="cancion.imagen" :alt="cancion.nombre" class="imagen-cancion">
                    </div>
-                   <div>
+                   <div class="container-nombre libre">
                         <h4>{{ cancion.nombre }}</h4>
                         <h5>{{ cancion.artista }}</h5>
+                        <div class="contenedor-corazon flex">
+                            <i class="fa-solid fa-heart "></i>
+                        </div>
                    </div>
                     
                 </article>
@@ -163,18 +166,74 @@ if(seleccion==='anotaciones'){
 </template>
 
 <style scoped>
+/*--------CANCIONES------ */
 .contenedor-canciones{
-    padding: 4em;
+   margin: 1em;
+    overflow: hidden;
+    border-radius: 2em;
+    object-fit: cover;
+    border: 1px solid transparent;
+    justify-content: space-between;
+}
+
+.imagen-cancion{
+    height: 18vh;
+}
+.container-nombre{
+    width: 80%;
+    padding: 0 3em;
+}
+.container-nombre h4{
+    font-size: 4em;
+}
+.container-nombre h5{
+    font-size: 3em;
+    font-weight: 100;
+}
+
+/*Solo para una card */
+.contenedor-registro .contenedor-canciones:only-child {
+    width: 80%; 
+    max-width: 80em;
+    margin: 3em auto;
+}
+.contenedor-registro .contenedor-canciones:only-child .imagen-cancion {
+    height: auto; 
+    max-height: 20vh;
+    width: 100%;
+    object-fit: cover;
+}
+.contenedor-registro .contenedor-canciones:only-child .container-nombre {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5em;
+}
+.contenedor-registro .contenedor-canciones:only-child .container-nombre h4 {
+    font-size: 5em;
+}
+.contenedor-registro .contenedor-canciones:only-child .container-nombre h5 {
+    font-size: 3em;    
 }
 
 
-
+/*-------------FRASES------- */
 .contenedor-frases{
     padding: 4em;
     border: 1px solid transparent;
     margin: 1.4em;
     border-radius: 2em;
     flex-direction: column;
+}
+
+.contenedor-registro .contenedor-frases:only-child {
+    width: 80%; 
+    max-width: 80em;
+    margin: 0 auto;
+}
+.contenedor-registro .contenedor-frases:only-child .frase p{
+  font-size: 3em;
 }
 .contenedor-corazon{
 justify-content: flex-end;
