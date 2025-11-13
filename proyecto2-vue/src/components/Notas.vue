@@ -4,6 +4,7 @@ import { useanotacionesStore } from '../stores/anotaciones';
 import { storeToRefs } from 'pinia';
 import { usefrasesStore } from '../stores/frases';
 import { usecancionesStore } from '../stores/canciones';
+import { image } from 'ionicons/icons';
 
 const anotacionesStore=useanotacionesStore();
 const {anotaciones}=storeToRefs(anotacionesStore)
@@ -22,27 +23,33 @@ const estilos={
         Enojo:{
             titulo:'titulo-rojo',
             color:'boton-enojo',
-            borde:'borde-rojo'
+            borde:'borde-rojo',
+            imagen:'/imagenes/carita-enojada.svg'
+
         },
          Calma:{
             titulo:'titulo-naranja',
             color:'boton-calma',
-            borde:'borde-naranja'
+            borde:'borde-naranja',
+            imagen:'/imagenes/carita-calma.svg'
         },
          Tristeza:{
             titulo:'titulo-azul',
             color:'boton-tristeza',
-            borde:'borde-azul'
+            borde:'borde-azul',
+            imagen:'/imagenes/carita-triste.svg'
         },
          Euforia:{
             titulo:'titulo-violeta',
             color:'boton-euforia',
-            borde:'borde-violeta'
+            borde:'borde-violeta',
+            imagen:'/imagenes/carita-euforia.svg'
         },
          Felicidad:{ 
             titulo:'titulo-amarillo',
             color:'boton-felicidad',
-            borde:'borde-amarillo'
+            borde:'borde-amarillo',
+            imagen:'/imagenes/carita-feliz.svg'
         }
 }
 const emocionEstilo=(emocion)=>{
@@ -115,7 +122,7 @@ if(seleccion==='anotaciones'){
                 <article v-for="(anotacion,index) in anotaciones" :key="index" class="contenedor-datos flex efecto2 ">
                     <div class="contenedor-circulo">
                         <div class="circulo" :class="emocionEstilo(anotacion.emocion).color">
-                            <!--icono-->
+                            <img :src="emocionEstilo(anotacion.emocion).imagen">
                         </div>
                     </div>
                     <div class="nota flex" :class="emocionEstilo(anotacion.emocion).borde">
@@ -284,16 +291,13 @@ justify-content: space-between;
   z-index: 100;
 }
 .modal{
-
     width: 40%;
-    
     padding: 4em;
-  border-radius: 2em;
-  width: 40%;
-  
-  max-width: 80em;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 2em;
+    width: 40%;
+    max-width: 80em;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 .nota-modal{
@@ -303,15 +307,13 @@ justify-content: space-between;
     font-size: 3em;
     font-weight: 100;
     color: var(--color-euforia);
-    
+
 }
 .titulo-nota{
     font-size: 4em;
     margin-bottom: 0.5em;
     color: var(--color-blanco);
 }
-
-
 
 /*Euforia */
 .boton-euforia{
@@ -373,13 +375,12 @@ color:var(--color-azul);
     width: 80%;
 }
 .container{
-        margin-top: 3em;
-        container-type: inline-size;
-        border-radius: 3em;
-        padding: 7em;
-        margin-bottom: 4em;
+    margin-top: 3em;
+    container-type: inline-size;
+    border-radius: 3em;
+    padding: 7em;
+    margin-bottom: 4em;
 }
-
 .titulo{
     margin-top: 3.5em;
     text-align: center;
@@ -391,19 +392,16 @@ color:var(--color-azul);
     font-size: 3em;
     color:var(--titulo-negro);
 }
-
 .nota{
     width: 100%;
     height: 70%;
     padding: 1.5em;
     justify-content: space-between;
-    
 }
 .contenedor-registro{
-        
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
        
 }
 .efecto{
@@ -474,6 +472,12 @@ justify-content: center;
 .circulo{
    width: 10em;
    height: 10em;
-  border-radius: 50%; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.circulo img{
+    height: 5vh;
 }
 </style>

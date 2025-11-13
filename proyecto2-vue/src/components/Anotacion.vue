@@ -108,25 +108,29 @@ const onSubmit=handleSubmit(
 
 const estilos={
         Enojo:{
-           
             titulo:'titulo-rojo',
-            boton:'boton-enojo'
+            boton:'boton-enojo',
+            imagen:'/imagenes/carita-rojo.svg'
         },
          Calma:{
             titulo:'titulo-naranja',
-            boton:'boton-calma'
+            boton:'boton-calma',
+            imagen:'/imagenes/carita-naranja.svg'
         },
          Tristeza:{
             titulo:'titulo-azul',
-            boton:'boton-tristeza'
+            boton:'boton-tristeza',
+            imagen:'/imagenes/carita-azul.svg'
         },
          Euforia:{
             titulo:'titulo-violeta',
-            boton:'boton-euforia'
+            boton:'boton-euforia',
+            imagen:'/imagenes/carita-violeta.svg'
         },
          Felicidad:{
             titulo:'titulo-amarillo',
-            boton:'boton-felicidad'
+            boton:'boton-felicidad',
+            imagen:'/imagenes/carita-amarillo.svg'
         }
 }
 
@@ -150,7 +154,7 @@ const emocionEstilo=computed(()=>{
         :class="emocionEstilo.titulo">
             <i class="fa-solid fa-arrow-left"   @click="nextSlide"></i>
             <div class="boton-emocion flex align-justify">
-            <!--icono-->
+                <img :src="emocionEstilo.imagen">
                 <h3 class="slider-title libre">{{ fondo[currentSliderIndex].emocion }}</h3>
             </div>
             <i class="fa-solid fa-arrow-right"   @click="prevSlide"></i> 

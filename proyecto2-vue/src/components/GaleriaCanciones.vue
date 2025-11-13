@@ -594,7 +594,9 @@ width: 80%;/*su ancho para margen*/
   width: 100%;
   height: 100%;
 }
-
+.overlay-circulo img{
+  height: 10vh;
+}
 .icono-amarillo .overlay-circulo{
     background-color:var(--color-amarillo);
     opacity:1;
@@ -610,18 +612,21 @@ transform: scale(1.3);
 transform: scale(1.3);
 }
 .icono-morado .overlay-circulo{
+    background-color:var(--color-violeta);
     opacity:1;
   }
 .hover-morado{
 transform: scale(1.3);
 }
 .icono-rosa .overlay-circulo{
+    background-color:var(--color-naranja);
     opacity:1;
   }
 .hover-rosa{
 transform: scale(1.3);
 }
 .icono-rojo .overlay-circulo{
+    background-color:var(--color-rojo);
     opacity:1;
   }
 .hover-rojo{
