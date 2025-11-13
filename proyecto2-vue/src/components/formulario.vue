@@ -153,11 +153,8 @@ const cambiocolor4=()=>{
                 <label for="youtube" class="nombre-input">Link de cancion (Youtube):</label>
                 <input v-model="youtube" v-bind="youtubeAttrs" type="text" id="youtube" placeholder="Link de youtube" class="input" :class="colorinput4" @change="cambiocolor4" @focus="cambiocolor4">
                 <p class="error libre">{{ errors.youtube }}</p>
-
-
                 <label for="image" class="nombre-input input-file">Ingresa imagen de álbum(640x640)</label>
                 <input type="file" v-bind="imageAttrs" @change="e=>image=e.target.files" id="image" name="image">
-
                 <p class="error libre">{{ errors.image }}</p>
                 <button type="submit" class="boton libre">Enviar</button>    
             </form>
@@ -186,7 +183,7 @@ background-image: url("/imagenes/fondo-form.jpg");
 .titulo{
     font-size: 7em;
     margin-bottom: 0.5em;
-    margin-top:4em;
+    margin-top:5em;
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
     font-weight: weight;

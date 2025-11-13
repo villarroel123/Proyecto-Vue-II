@@ -364,7 +364,7 @@ const hover5=ref()
   overflow: hidden;
   @container (min-width: 20rem) {
     .imagen{
-      height: 50vh;
+      height: 45vh;
     }
   }
 }
@@ -386,6 +386,9 @@ const hover5=ref()
 .dato-titulo i{
   font-size: 3em;
   cursor: pointer;
+}
+.dato-titulo i:hover{
+  color: var(--color-base);
 }
 .datos-h4{
   font-size: 3em;

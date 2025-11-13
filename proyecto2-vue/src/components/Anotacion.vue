@@ -153,7 +153,7 @@ const emocionEstilo=computed(()=>{
         <div class="emocion flex align-justify transition"
         :class="emocionEstilo.titulo">
             <i class="fa-solid fa-arrow-left"   @click="nextSlide"></i>
-            <div class="boton-emocion flex align-justify">
+            <div class="boton-emocion flex">
                 <img :src="emocionEstilo.imagen">
                 <h3 class="slider-title libre">{{ fondo[currentSliderIndex].emocion }}</h3>
             </div>
@@ -167,7 +167,6 @@ const emocionEstilo=computed(()=>{
             <p v-if="errors.emocion" class="error mt-2">{{ errors.emocion }}</p>
             <textarea id="texto"v-model="texto" v-bind="textoAttrs"  placeholder="Describe lo que estas sintiendo..." class="campo-nota"></textarea>
             <p class="error libre" :class="emocionEstilo.titulo">{{ errors.texto }}</p>
-
             <button type="submit" class="boton-envio libre transition" :class="emocionEstilo.boton">Registrar emoción</button>
         </form>
 
@@ -217,8 +216,8 @@ color:var(--color-naranja);
 color:var(--color-azul);
 }
 .slider-title{
-    margin: 0.5em;
-    font-size: 2.5em;
+    margin: 0 0.3em;
+    font-size: 3em;
     font-weight: 100;
 }
 
@@ -247,16 +246,20 @@ cursor: pointer;
 }
 
 .boton-emocion{
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
     border-radius:2em;
     height:5em;
     background-color:var(--color-blanco);
-    width:15em;
+    width:20em;
 }
 .boton-emocion i{
 font-size:1.8em;
 margin:1em;
-
-
+}
+.boton-emocion img{
+    height: 3vh;
 }
 .pregunta{
     margin-top:1em;

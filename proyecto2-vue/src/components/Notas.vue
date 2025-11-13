@@ -75,18 +75,22 @@ const closeModal=()=>{
 const filtroAnotaciones=ref(false);
 const filtroCanciones=ref(false);
 const filtroFrases=ref(false);
+const opcionTitulo=ref('');
 
 const opcion=(seleccion)=>{
 
-if(seleccion==='anotaciones'){
+if(seleccion==='Anotaciones'){
+    opcionTitulo.value=seleccion;
     filtroAnotaciones.value=true;
     filtroCanciones.value=false;
     filtroFrases.value=false;
-}else if(seleccion==='canciones'){
+}else if(seleccion==='Canciones'){
+    opcionTitulo.value=seleccion;
     filtroCanciones.value=true;
     filtroFrases.value=false;
     filtroAnotaciones.value=false;
 }else{
+    opcionTitulo.value=seleccion;
     filtroFrases.value=true;
     filtroAnotaciones.value=false;
     filtroCanciones.value=false;
@@ -111,11 +115,11 @@ if(seleccion==='anotaciones'){
         <div class="efecto container">
             <div class="contenedor-filtro flex">
                 <ul class="flex libre">
-                    <li class="item" @click="opcion('anotaciones')">Anotaciones</li>
-                    <li class="item"@click="opcion('canciones')" >Canciones</li>
-                    <li class="item"@click="opcion('frases')">Frases</li>
+                    <li class="item" @click="opcion('Anotaciones')">Anotaciones</li>
+                    <li class="item"@click="opcion('Canciones')" >Canciones</li>
+                    <li class="item"@click="opcion('Frases')">Frases</li>
                 </ul>
-                <h4 class="nombre libre">hola</h4>
+                <h4 class="nombre libre">{{ opcionTitulo }}</h4>
             </div>
 
             <div class="contenedor-registro" v-if="filtroAnotaciones">
@@ -273,9 +277,9 @@ justify-content: space-between;
 
 .nombre{
     font-size: 3em;
-    color: var(--color-blanco);
+    color: var(--color-violeta);
     margin: 0 0.5em;
-    font-weight: 100;
+    
 }
 
 
@@ -426,6 +430,9 @@ color:var(--color-azul);
     border-radius: 2em;
     align-items: flex-end;
 }
+.contenedor-datos:hover{
+    transform: scale(1.01);
+}
 .datos{
     flex-direction: column;
 }
@@ -456,6 +463,10 @@ justify-content: center;
     text-align: center;
     cursor: pointer;
     z-index: 3;
+}
+.boton:hover{
+    transition: all 1s;
+    transform: scale(1.1);
 }
 .boton h3{
     font-size: 2.4em;
