@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: inherit;
+	text-decoration: none;
+	color: inherit;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 62.5%;
+}
+ol, ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+p {
+	text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+}
+/*tipografias*/
+
+#root, #__next {
+	isolation: isolate;
+}
+
+
+:root{
+    --bg-fondo:#131017;
+    --color-alegria:#f8ce5a;
+    --color-tristeza: #507bc9; 
+    --color-enojo: #992020; 
+    --color-euforia: #AA8BE9; 
+    --color-calma: #FEC2AC;
+    --color-base:#1C1821;
+    --color-blanco:#FFF5FC;
+    --color-violetaoscuro:#2C223D;
+    --color-violetaclaro:#CCB7F5;
+
+
+  /*TITULOS*/
+  --titulo-amarillo:#1f1400;
+  --titulo-azul:#000622;
+  --titulo-rojo:#210101;
+  --titulo-naranja:#8d2202;
+  --titulo-violeta:#09011b;
+  --titulo-blanco:#FFF5FC;
+  --titulo-negro:#131017;
+  /*COLORES NOTAS*/
+    --color-rojo:#2B0000;
+    --color-azul:#021A46;
+    --color-naranja:#A82F03;
+    --color-amarillo:#7C5E0B;
+    --color-violeta:#271B40;
+
+    --borde-notaamarillo:0.1em solid #7C5E0B;
+	--borde-notaazul: 0.1em solid #021A46;
+	--borde-notarojo: 0.1em solid #2B0000;
+	--borde-notanaranja: 0.1em solid #A82F03;
+	--borde-notavioleta:0.1em solid #271B40;
+
+  /*circulos*/
+  --circulo-amarillo:radial-gradient(
+    circle 40em,
+    rgb(255, 175, 2) ,
+    rgb(219, 169, 3),
+    rgb(248, 190, 1,0));
+	--circulo-azul:radial-gradient(
+    circle 40em,
+    rgb(2, 6, 255) ,
+    rgb(3, 71, 219),
+    rgba(1, 67, 248, 0));
+	--circulo-naranja:radial-gradient(
+    circle 40em,
+    rgb(245, 124, 54) ,
+    rgb(247, 144, 85),
+    rgb(248, 190, 1,0));
+	--circulo-rojo:radial-gradient(
+    circle 40em,
+    rgb(252, 26, 26) ,
+    rgb(247, 27, 27),
+    rgba(255, 31, 31, 0));
+	--circulo-violeta:radial-gradient(
+    circle 40em,
+    rgb(120, 2, 255) ,
+    rgb(120, 2, 255),
+    rgb(248, 190, 1,0));
+	
+	/* Bordes*/
+	--borde-amarillo:0.1em solid #6d4602;
+	--borde-azul: 0.1em solid#8fbff9;
+	--borde-rojo: 0.1em solid #210101;
+	--borde-naranja: 0.1em solid #f34033;
+	--borde-violeta:0.1em solid #1a0254;
+
+}
+
+
+
+.flex{
+    display: flex;
+}
+.align-justify{
+   justify-content: center;
+    align-items: center; 
+}
+.image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TIPOGRAFIAS*/
+.sifnika{
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.inconsolata{
+    font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal; 
+}
+.libre{
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}

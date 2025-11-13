@@ -1,0 +1,373 @@
+{
+    "Felicidad":[
+        {
+            "name": "Happy",
+            "artist": "Pharrell Williams",
+            "image": "/imagenes/happy.jpg",
+            "youtube":"https://youtu.be/ZbZSe6N_BXs?si=TfXNmD3JmazyG6or"
+        },
+        {
+            "name": "Dance The Night",
+            "artist": "Dua Lipa",
+            "image": "/imagenes/dance the night.jpg",
+            "youtube": "https://youtu.be/hCLkVrp_4CE?si=ck6VULBmlE5GLnp5"
+        },
+        {
+            "name": "Dancing Queen",
+            "artist": "ABBA",
+            "image": "/imagenes/dancing queen.jpg",
+            "youtube": "https://youtu.be/xFrGuyw1V8s?si=OvnocU-pZnPuK1jh"
+        },
+        {
+            "name": "Don't Stop Me Now",
+            "artist": "Queen",
+            "image": "/imagenes/dont stop me now.jpg",
+            "youtube": "https://youtu.be/HgzGwKwLmgM?si=AyXtGGfIQUJdHNAC"
+        },
+        {
+            "name": "September",
+            "artist": "Earth,Wind & Fire",
+            "image": "/imagenes/september.jpg",
+            "youtube": "https://youtu.be/Gs069dndIYk?si=DGRyZUDZhmGNdrIJ"
+        },
+        {
+            "name": "Waiting For Love",
+            "artist": "Avicii",
+            "image": "/imagenes/waiting for love.jpg",
+            "youtube": "https://youtu.be/cHHLHGNpCSA?si=nG_npV2UpZ6S7cLC"
+        },
+         {
+            "name": "Take on Me",
+            "artist": "a-ha",
+            "image": "/imagenes/take on me.jpg",
+            "youtube": "https://youtu.be/djV11Xbc914?si=ukj9VDr3eHn19dhl"
+        },
+         {
+            "name": "My Happy Ending",
+            "artist": "Avril Lavigne",
+            "image": "/imagenes/happy ending.jpg",
+            "youtube": "https://youtu.be/s8QYxmpuyxg?si=d5wUmnh3ZG21PY9z"
+        },
+        {
+            "name": "As It Was",
+            "artist": "Harry Styles",
+            "image": "/imagenes/as it was.jpg",
+            "youtube": "https://youtu.be/H5v3kku4y6Q?si=1SADyfU6zDKYz9u1"
+        },
+        {
+            "name": "Adventure of a Lifetime",
+            "artist": "Coldplay",
+            "image": "/imagenes/Adventure of a Lifetime.jpg",
+            "youtube": "https://youtu.be/QtXby3twMmI?si=6USehOgqMkww-raN"
+        },
+         {
+            "name": "Blinding Lights",
+            "artist": "The Weeknd",
+            "image": "/imagenes/blindind lights.jpg",
+            "youtube": "https://youtu.be/4NRXx6U8ABQ?si=UejCu172xBTCKiz4"
+        },
+         {
+            "name": "Espresso",
+            "artist": "Sabrina Carpenter",
+            "image": "/imagenes/espresso.jpg",
+            "youtube": "https://youtu.be/eVli-tstM5E?si=-Y_p9-Y98kP6wnmu"
+        }
+        
+    ],
+    "Tristeza":[
+         {
+            "name": "WILDFLOWER",
+            "artist": "Billie Eilish",
+            "image": "/imagenes/wildflower.png",
+            "youtube":"https://youtu.be/l08Zw-RY__Q?si=MIK74PRru59Wcx6B"
+        },
+        {
+            "name": "Something In The Way",
+            "artist": "Nirvana",
+            "image": "/imagenes/something.jpg",
+            "youtube": "https://youtu.be/4VxdufqB9zg?si=AMHuRHpJPvlh3FZZ"
+        },
+        {
+            "name": "Fourth of July",
+            "artist": "Sufjan Stevens",
+            "image": "/imagenes/fourth of july.jpg",
+            "youtube": "https://youtu.be/JTeKpWp8Psw?si=RV1cwE5JnxguV5qC"
+        },
+        {
+            "name": "Daylight",
+            "artist": "David Kushner",
+            "image": "/imagenes/daylight.jpg",
+            "youtube": "https://youtu.be/MoN9ql6Yymw?si=gxtp2dD3j1TZyCb8"
+        },
+        {
+            "name": "Cardigan",
+            "artist": "Taylor Swift",
+            "image": "/imagenes/cardigan.jpg",
+            "youtube": "https://youtu.be/zLSUp53y-HQ?si=4VEBywATtcPKj2zN"
+        },
+        {
+            "name": "Sparks",
+            "artist": "Coldplay",
+            "image": "/imagenes/sparks.jpg",
+            "youtube": "https://youtu.be/Ar48yzjn1PE?si=a9UNdRrZZjy3s3hd"
+        },
+         {
+            "name": "The Night We Met",
+            "artist": "Lord Huron",
+            "image": "/imagenes/night we met.jpg",
+            "youtube": "https://youtu.be/KtlgYxa6BMU?si=tK9T9XMdBPtKu4c_"
+        },
+         {
+            "name": "Atlantis",
+            "artist": "Seafret",
+            "image": "/imagenes/atalntis.jpg",
+            "youtube": "https://youtu.be/gVAy3IZiL0s?si=aTfd39vBBO9yT35H"
+        },
+           {
+            "name": "Drivers License",
+            "artist": "Olivia Rodrigo",
+            "image": "/imagenes/driverse license.jpg",
+            "youtube": "https://youtu.be/ZmDBbnmKpqQ?si=mAeu0uu2Aowi2cTW"
+        },
+         {
+            "name": "Shape Of My Heart",
+            "artist": "Sting",
+            "image": "/imagenes/shape of my heart.jpg",
+            "youtube": "https://youtu.be/NlwIDxCjL-8?si=KkPP6xlMJz996m3k"
+        },
+         {
+            "name": "Street Spirit",
+            "artist": "Radiohead",
+            "image": "/imagenes/street spirit.jpg",
+            "youtube": "https://youtu.be/LCJblaUkkfc?si=jpecGdnBOJEDiMAX"
+        },
+          {
+            "name": "Juliet",
+            "artist": "Cavetown",
+            "image": "/imagenes/juliet.jpg",
+            "youtube": "https://youtu.be/GYsgDprYmIw?si=Ydvv_OACMNNcSXJ0"
+        }
+    ],
+    "Enojo":[
+         {
+            "name": "Demons",
+            "artist": "Doja Cat",
+            "image": "/imagenes/demons.jpg",
+            "youtube":"https://youtu.be/qwtyEKTGGQ8?si=2sT9XeJlA2k6TxRs"
+        },
+        {
+            "name": "Thot Shit",
+            "artist": "Megan Thee Stallion",
+            "image": "/imagenes/thot shit.jpg",
+            "youtube": "https://youtu.be/K4KlIFJxlNU?si=3qmLGviVtpiHgSDQ"
+        },
+        {
+            "name": "FORTY",
+            "artist": "Nicki Nicole",
+            "image": "/imagenes/forty.jpg",
+            "youtube": "https://youtu.be/kblGAgspVo0?si=4ddYNg6G83ShMIzl"
+        },
+        {
+            "name": "Sappy",
+            "artist": "Nirvana",
+            "image": "/imagenes/sappy.jpg",
+            "youtube": "https://youtu.be/jOg8IblMNK4?si=rou6LgtyRUFfz89L"
+        },
+        {
+            "name": "HOPE",
+            "artist": "NF",
+            "image": "/imagenes/hopé.jpg",
+            "youtube": "https://youtu.be/tsmPCi7NKrg?si=4bwDjVcMb_Sg8jZ5"
+        },
+        {
+            "name": "Chop Suey!",
+            "artist": "System Of A Down",
+            "image": "/imagenes/chop suey.jpg",
+            "youtube": "https://youtu.be/GK-DkHHAMIU?si=hF5ZWc_SBrcRn_QI"
+        },
+         {
+            "name": "Master Od Puppets",
+            "artist": "Metallica",
+            "image": "/imagenes/master of puppets.jpg",
+            "youtube": "https://youtu.be/E0ozmU9cJDg?si=mzvQgDoM5i42Om9Y"
+        },
+         {
+            "name": "Brind Me To Life",
+            "artist": "Evanescence",
+            "image": "/imagenes/bring me to life.jpg",
+            "youtube": "https://youtu.be/3YxaaGgTQYM?si=7FYqfXW-56jDnQml"
+        },
+           {
+            "name": "El hijo de Hernández",
+            "artist": "El Cuarteto De Nos",
+            "image": "/imagenes/El hijo de Hernández.jpg",
+            "youtube": "https://youtu.be/Nxv_MPmG9M4?si=atSOZH8tUvLgYvI7"
+        },
+         {
+            "name": "Balada Del Diablo y la Muerte",
+            "artist": "La Renga",
+            "image": "/imagenes/Balada Del Diablo y la Muerte.jpg",
+            "youtube": "https://youtu.be/VC5NaNsR7-8?si=kGodBBWwXhSZ4PuT"
+        },
+          {
+            "name": "Welcome To The Jungle",
+            "artist": "Guns N'Roses",
+            "image": "/imagenes/Welcome To The Jungle.jpg",
+            "youtube": "https://youtu.be/9erLsEHAZRI?si=62g2ka6FLhQliEIp"
+        },
+         {
+            "name": "Thunderstruck",
+            "artist": "AC/DC",
+            "image": "/imagenes/thunderstruck.jpg",
+            "youtube": "https://youtu.be/v2AC41dglnM?si=EmXuAZgj4PX5pSBz"
+        }
+    ],
+    "Calma":[
+         {
+            "name": "Fine line",
+            "artist": "Harry Styles",
+            "image": "/imagenes/fine line.jpg",
+            "youtube":"https://youtu.be/Ojp71GGm-LQ?si=iI3WZ_jAmmc0K4AD"
+        },
+        {
+            "name": "Anchor",
+            "artist": "Novo Amor",
+            "image": "/imagenes/anchor.jpg",
+            "youtube": "https://youtu.be/OmKAn8rNbKg?si=DXAW51o886jpyl9O"
+        },
+        {
+            "name": "Kilby Girl",
+            "artist": "The Backseat Lovers",
+            "image": "/imagenes/kilby girl.jpg",
+            "youtube": "https://youtu.be/oTwVce9eWb4?si=snB8ut-quUbALw2a"
+        },
+        {
+            "name": "Pretty Girl",
+            "artist": "Clairo",
+            "image": "/imagenes/pretty girl.jpg",
+            "youtube": "https://youtu.be/mngtcfcaVrI?si=CWGeaipmEi0nRHsF"
+        },
+        {
+            "name": "Seaside",
+            "artist": "The Kooks",
+            "image": "/imagenes/seaside.jpg",
+            "youtube": "https://youtu.be/OgOwQvNzD-k?si=W7YEl5cZPSk243LX"
+        },
+        {
+            "name": "BIRDS OF FEATHER",
+            "artist": "Billie Eilish",
+            "image": "/imagenes/wildflower.png",
+            "youtube": "https://youtu.be/d5gf9dXbPi0?si=wGa0vASZN4rJOGvP"
+        },
+         {
+            "name": "Hot Rod",
+            "artist": "Dayglow",
+            "image": "/imagenes/hot rod.jpg",
+            "youtube": "https://youtu.be/RUih0WRFI-g?si=mYdu-mb9vnn8LIJ-"
+        },
+         {
+            "name": "Road Trippin'",
+            "artist": "Red Hot Chili Peppers",
+            "image": "/imagenes/road trippin.jpg",
+            "youtube": "https://youtu.be/11GYvfYjyV0?si=PXCYI6IlZX1Jdc5M"
+        },
+           {
+            "name": "Dust in the Wind",
+            "artist": "Kansas",
+            "image": "/imagenes/dust in the wind.jpg",
+            "youtube": "https://youtu.be/tH2w6Oxx0kQ?si=WNbgir2n9KMuPP2v"
+        },
+         {
+            "name": "End of Beginning",
+            "artist": "Djo",
+            "image": "/imagenes/end of beggining.jpg",
+            "youtube": "https://youtu.be/xy3AcmW0lrQ?si=qCsbK5vEXIxucwxj"
+        },
+         {
+            "name": "People Watching",
+            "artist": "Conan Gray",
+            "image": "/imagenes/people watching.jpg",
+            "youtube": "https://youtu.be/noJ4I3RBoEY?si=s4KSmu-6YwmAnOTd"
+        },
+         {
+            "name": "Girls",
+            "artist": "Girl in red",
+            "image": "/imagenes/girls.jpg",
+            "youtube": "https://youtu.be/_BMBDY01kPk?si=ZITjWSfP01AB16a9"
+        }
+    ],
+    "Euforia":[
+         {
+            "name": "Let It Happen",
+            "artist": "Tame Impala",
+            "image": "/imagenes/let it happen.jpg",
+            "youtube":"https://youtu.be/odeHP8N4LKc?si=WmkBsmy8kFSyVqoL"
+        },
+        {
+            "name": "Blue Girl",
+            "artist": "TV Girl",
+            "image": "/imagenes/blue girl.jpg",
+            "youtube": "https://youtu.be/PzIXNqpCug0?si=n5OdR9jdimHfO1Qf"
+        },
+        {
+            "name": "Still Don't Know My Name",
+            "artist": "Labrinth",
+            "image": "/imagenes/still dont know my name.jpg",
+            "youtube": "https://youtu.be/9HrpmCTD-ik?si=tjvMjEmRcvcZU6VA"
+        },
+        {
+            "name": "Us and Them",
+            "artist": "Pink Floyd",
+            "image": "/imagenes/us and them.jpg",
+            "youtube": "https://youtu.be/HoLhKJuGhK0?si=yUkV6Ule-2hXZLFb"
+        },
+        {
+            "name": "ilomilo",
+            "artist": "Billie Eilish",
+            "image": "/imagenes/ilomilo.jpg",
+            "youtube": "https://youtu.be/-e7wiyNO2us?si=iDlmPkM-4nj90MX9"
+        },
+        {
+            "name": "Halcyon Age",
+            "artist": "Vansire",
+            "image": "/imagenes/Halcyon Age.jpg",
+            "youtube": "https://youtu.be/tZw4baIKy58?si=oNYSBWW06J4OYkBh"
+        },
+         {
+            "name": "Feels Like We Only Go Backwards",
+            "artist": "Tame Impala",
+            "image": "/imagenes/Feels Like We Only Go Backwards.jpg",
+            "youtube": "https://youtu.be/TZ-W40TEXNc?si=t7pdu0BdqT_xmTYe"
+        },
+         {
+            "name": "We Are The People",
+            "artist": "Empire Of The Sun",
+            "image": "/imagenes/We Are The People.jpg",
+            "youtube": "https://youtu.be/hN5X4kGhAtU?si=WIhSKzJjNBj1xDSp"
+        },
+           {
+            "name": "Come A Little Closer",
+            "artist": "Cage The Elephant",
+            "image": "/imagenes/Come A Little Closer.jpg",
+            "youtube": "https://youtu.be/KVYup3Qwh8Q?si=Eurl8R_LKOK5g9u1"
+        },
+         {
+            "name": "Plastic Beach",
+            "artist": "Gorillasz, Mick Jones, Paul Simonon",
+            "image": "/imagenes/Plastic Beach.jpg",
+            "youtube": "https://youtu.be/AGM8BMqBcTo?si=Eg1XjEmPJSk6uvtR"
+        },
+         {
+            "name": "Veridis Quo",
+            "artist": "Daft Punk",
+            "image": "/imagenes/Veridis Quo.jpg",
+            "youtube": "https://youtu.be/TCd6PfxOy0Y?si=yvp2Z1IUv0y5fTcc"
+        },
+        {
+            "name": "Dance Little Liar",
+            "artist": "Artic Monkeys",
+            "image": "/imagenes/Dance Little Liar.jpg",
+            "youtube":"https://youtu.be/JZ0MoWajrQ8?si=YraxejGHo-vriUtA"
+        }
+    ]
+}
