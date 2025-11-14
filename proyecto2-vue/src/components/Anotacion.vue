@@ -14,7 +14,6 @@ const fondo=[
     {
         src:'/imagenes/registro-rojo.jpg',
         emocion: "Enojo"//el titulo que va a cambiar
-    
     },
     {
         src:'/imagenes/registro-azul.jpg',
@@ -25,7 +24,6 @@ const fondo=[
         emocion: "Felicidad"//el titulo que va a cambiar
     },
     {
-        
         src:'/imagenes/registro-violeta.jpg',
         emocion: "Euforia"//el titulo que va a cambiar
     },
@@ -58,12 +56,8 @@ const [texto, textoAttrs]=defineField('texto',{
     validateOnModelUpdate: false,//para que no se actualice a cada rato
 })
 
-
-
-
-//botones
+//-----------botones------
 const currentSliderIndex=ref(0);
-
 const updateEmotionField = (newIndex) => {
     currentSliderIndex.value = newIndex;
     emocionField.value = fondo[newIndex].emocion;//valor que va a tomar en el input del formulario, cada que se cambie de emocion se va a actualizar
@@ -76,8 +70,6 @@ const prevSlide=()=>{
     const newIndex=(currentSliderIndex.value-1+fondo.length)%fondo.length;
     updateEmotionField(newIndex);//actualiza la emocion
 }
-
-
 const onSubmit=handleSubmit(
     values=>{
         anotacionStore.agregarAnotacion({
@@ -133,20 +125,13 @@ const estilos={
             imagen:'/imagenes/carita-amarillo.svg'
         }
 }
-
-   
-
-
 const emocionactual=computed(()=>fondo[currentSliderIndex.value].emocion)
-
 const emocionEstilo=computed(()=>{
     return estilos[emocionactual.value];
 })
 
 </script>
 <template>
-   
-
 <section class="fondo-section image flex align-justify" :style="{ backgroundImage: 'url(' + fondo[currentSliderIndex].src + ')' }">
     <div class="contenedor-section flex align-justify"  >
       
@@ -169,14 +154,8 @@ const emocionEstilo=computed(()=>{
             <p class="error libre" :class="emocionEstilo.titulo">{{ errors.texto }}</p>
             <button type="submit" class="boton-envio libre transition" :class="emocionEstilo.boton">Registrar emoción</button>
         </form>
-
     </div>
-    
 </section>
-
-
-
-
 </template>
 
 <style scoped>
@@ -220,11 +199,6 @@ color:var(--color-azul);
     font-size: 3em;
     font-weight: 100;
 }
-
-
-
-
-
 .fondo-section{
     height:100vh;
     transition:1s;
@@ -267,8 +241,6 @@ margin:1em;
     margin-bottom:1em;
     text-align:center;
 }
-
-
 .form{
     height:60vh;
     flex-direction:column;
@@ -294,7 +266,6 @@ margin:1em;
 .boton-envio:hover{
     transform: scale(1.1);
 }
-
 .error{
     margin-top:0.5em;
 }

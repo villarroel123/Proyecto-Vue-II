@@ -3,23 +3,18 @@ import { usefrasesStore } from '../stores/frases';
 import { storeToRefs } from 'pinia';
 import { onMounted } from 'vue';
 const fraseStore=usefrasesStore();
-
 const { frases } = storeToRefs(fraseStore);
 const { obtenerFrase } = fraseStore;
 
 onMounted(() => {
-    obtenerFrase();
+    obtenerFrase();//se traen frases de la store ejecutando funcion
 });
-
 //guardo en la store
 const agregarFav=()=>{
     fraseStore.fraseFavorita(frases.value)
 }
-
-
 </script>
 <template>
-
 <section class="section-frases flex align-justify image">
     <article class="container-frases flex align-justify ">
         <div class="detalles"><!--con position rela-->
@@ -51,7 +46,6 @@ const agregarFav=()=>{
     min-width: 100em;
     min-height: 30vh;
     border-radius: 4em;
-    
 }
 .detalles{
     min-height: 30vh; 
@@ -60,7 +54,6 @@ const agregarFav=()=>{
     margin: 3em;
     height: 100%;
     min-width: 35em;
-    
 }
 .frases{
     background-color: var(--color-blanco);
@@ -81,7 +74,6 @@ const agregarFav=()=>{
 .boton{
     height: 5vh;
     border-radius: 3em;
-   
 }
 .boton i{
     margin:0.5em;
@@ -101,7 +93,6 @@ const agregarFav=()=>{
 .nube1{
     position: absolute;
     background-image: url("/imagenes/nube1.svg");
-    
     top: -7em;
     z-index: 10;
     right: 0;
@@ -116,7 +107,6 @@ const agregarFav=()=>{
     width: 30em;
     bottom: -5em;
     left: -12em;
-  
 }
 .nube3{
     position: absolute;
@@ -126,22 +116,18 @@ const agregarFav=()=>{
     min-width: 30em;
     bottom: 0;
     left: 7em;
-    
 }
-
 @media (max-width: 800px) {
  .container-frases{
     width: 90%;
     min-width: 80em;
     min-height: 30vh;
-    
 }
 .detalles{
     width: 35%;
     margin: 3em;
     height: 100%;
     min-width: 25em;
-    
 }
 .nube1{
     top: -7em;
@@ -155,14 +141,12 @@ const agregarFav=()=>{
     width: 24em;
     bottom: -5em;
     left: -8em;
-  
 }
 .nube3{
     min-height: 12em;
     min-width: 24em;
     bottom: 0;
     left: 7em;
-    
 }
 .titulo{
     margin-top: 0.2em;
@@ -186,7 +170,6 @@ const agregarFav=()=>{
     width: 20em;
     bottom: -5em;
     left: -5em;
-  
 }
 .nube3{
     min-height: 10em;
@@ -199,28 +182,22 @@ const agregarFav=()=>{
     width: 90%;
     min-width: 60em;
     min-height: 30vh;
-    
 }
 .detalles{
     width: 35%;
     margin: 3em;
     height: 100%;
     min-width: 22em;
-    
 }
 }
-
-
 @media (max-width: 480px) {
 .detalles{
-    display: none;
-    
+    display: none; 
 }
 .container-frases{
     width: 90%;
     min-width: 30em;
-    min-height: 30vh;
-    
+    min-height: 30vh; 
 }
 }
 

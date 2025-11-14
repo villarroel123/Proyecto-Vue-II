@@ -79,13 +79,11 @@ const chartOptions = {
       <h4 class="emociones">de tus emociones</h4>
     </div>
   </div>
-
   <div class="grafico-container flex align-justify efecto">
       <Doughnut :data="chartData" :key="JSON.stringify(chartData)":options="chartOptions" />
       
   </div>
 </section>
- 
 </template>
 <style scoped>
 .section-grafico{
@@ -148,13 +146,10 @@ font-size: 7em;
 
 
 
-
-
 /*___MEDIA QUERIES*/ 
 @media (max-width: 800px) {
   .titulo{
     font-size: 6em;
-    
   }
   .parrafo{
     font-size: 2.5em;
@@ -163,9 +158,6 @@ font-size: 7em;
   flex-direction: column;
   min-width: 60em;
 }
-
-
- 
 }
 @media (max-width: 480px) {
     .titulo{

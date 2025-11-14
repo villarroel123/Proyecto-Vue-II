@@ -3,16 +3,14 @@ import Home from '../views/Home.vue';
 //import AddMovie from '../views/AddMovie.vue';
 import {  RouterLink } from 'vue-router';
 import{ref,onMounted,onUnmounted} from 'vue';
-
+//para que al scrollear cambie el color y tenga posicion fija
 const isScrolled=ref(false)
-
 const detectoScroll=()=>{
     isScrolled.value=window.scrollY>100;
 }
 onMounted(() => {
   window.addEventListener('scroll', detectoScroll, { passive: true })
 })
-
 onUnmounted(() => {
   window.removeEventListener('scroll', detectoScroll)
 })
@@ -39,7 +37,6 @@ onUnmounted(() => {
 </header>
 </template>
 <style scoped>
-
 .header{
     width: 100%;
     background-color: #FFF5FC;
@@ -53,20 +50,15 @@ onUnmounted(() => {
     justify-content: space-between;
 }
 .navegador{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .lista{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    
-    
 } .item{
     padding: 0.5em;
     font-family: "Signika", sans-serif;
@@ -92,11 +84,9 @@ onUnmounted(() => {
     font-style: normal;
     font-size: 3.5em;
     transition: 1.5s;
-    
 }
 .scrolled{
     background-color: #131017;
-    
 }
 .scrolled li{
     color: rgb(196, 196, 196);
@@ -107,10 +97,6 @@ onUnmounted(() => {
 .scrolled a{
     color: rgb(196, 196, 196);
 }
-
-
-
-
 /*___MEDIA QUERIES*/ 
 @media (max-width: 700px) {
   .nombre{
@@ -128,5 +114,4 @@ onUnmounted(() => {
     font-size: 2em;
   }
 }
-
 </style>
