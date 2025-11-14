@@ -51,7 +51,6 @@ const cancionseleccionada=reactive({
   name:"",
   artist:"",
   youtube:""
-
 })
 const abreModal=(cancion)=>{
     modal.value=true;
@@ -75,7 +74,6 @@ const getEmbedUrl = (url) => {
         return `https://www.youtube.com/embed/${videoId}`;
 }
 }
-
 //--------PARA CIRCULOS------
 const hover1=ref()
 const hover2=ref()
@@ -83,20 +81,20 @@ const hover3=ref()
 const hover4=ref()
 const hover5=ref()
 
-
-
 </script>
 <template>
       <!--MODAL------>
 <div v-if="modal" @click.self="cierraModal" class="modal-container flex align-justify">
   <div class="modal">
-    <h4 class="titulo-cancion inconsolata">{{ cancionseleccionada.name }}</h4>
+    <div class="flex datos-modal">
+      <h4 class="titulo-cancion inconsolata">{{ cancionseleccionada.name }}</h4>
+       <i class="fa-solid fa-heart " @click="guardoFav(cancion)"></i>          
+    </div>
     <h5 class="artista-cancion inconsolata">{{ cancionseleccionada.artist }}</h5>
     <iframe class="video" :src="getEmbedUrl(cancionseleccionada.youtube)" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>
 <!--FIN MODAL-->
-
 <section class="section-botones flex align-justify" id="section-boton" >
   <div class="botones-container">
     <h3 class="pregunta inconsolata">¿Qué emoción sentis?</h3>
@@ -152,8 +150,6 @@ const hover5=ref()
       @mouseleave="hover5 = false"class="button sifnika euforico"> Euforia</button>
   </div>
 </section>
-
-
 <section class="galeria-canciones flex align-justify" :class="cambiofondo" v-if="opcionseleccionada">
   
     <div :class="['circulo', 'circulos', colorcirculo]"></div>
@@ -186,9 +182,6 @@ const hover5=ref()
     </div>
   </div>
 </section>
-
-
-
 </template>
 <style scoped>
 /*MODAL */
@@ -202,10 +195,28 @@ const hover5=ref()
   z-index: 100;
 }
 .modal{
+  margin-top: 10em;
+  height: 80%;
   width: 40%;
+  min-width: 110em;
+  border-radius: 2em;
+  background-color: rgba(6, 6, 7, 0.8);
+  padding: 2em;
 }
+.datos-modal{
+  justify-content: space-between;
+  align-items: center;
+}
+.datos-modal i{
+  color: var(--color-blanco);
+  font-size: 4em;
+  margin-bottom: 0.2em;
+
+}
+
 .titulo-cancion{
-   font-size: 4em;
+  
+    font-size: 4em;
     margin-bottom: 0.2em;
     color: var(--color-blanco);
     
@@ -219,7 +230,7 @@ const hover5=ref()
 }
 .video{
   width: 100%;
-  height:47em;
+  min-height:60em;
   
 }
 /*----cambio de fondo segun emocion*/
@@ -636,12 +647,6 @@ transform: scale(1.3);
 transform: scale(1.3);
 }
 
-
-
-
-
-
-
 /*estilos y posisciones de los mini circulos*/
 .circulo-alegria{
   background-color: var(--color-alegria);
@@ -729,7 +734,17 @@ transform: scale(1.1);
 .enojado{
   right: 10em;
 }
-
+/*MODAL */
+.modal{
+  margin-top: 12em;
+  height: 80%;
+  width: 40%;
+  min-width: 80em;
+}
+.video{
+  width: 100%;
+  height:40em;
+}
 }
 
 @media (max-width: 700px) {
@@ -758,12 +773,52 @@ transform: scale(1.1);
 .section-circulos{
   display: none;
 }
+/*MODAL */
+.modal{
+  margin-top: 12em;
+  height: 70%;
+  width: 40%;
+  min-width: 70em;
+}
+.titulo-cancion{
+   font-size: 3.5em;
+}
+.artista-cancion{
+  font-size: 2.5em;
+  
+}
+.datos-modal i{
+  font-size: 3em;
+}
+.video{
+  margin-top: 2em;
+  min-height:50em;
+}
 }
 @media (max-width: 480px) {
  .parrafo{
   font-size: 2.2em;
   width: 100%;
  }
+ /*MODAL */
+.modal{
+  margin-top: 12em;
+  height: 60%;
+  width: 40%;
+  min-width: 60em;
+}
+.titulo-cancion{
+   font-size: 3em;
+}
+.artista-cancion{
+  font-size: 2em;
+}
+.datos-modal i{
+  font-size: 2.5em;
+}
+.video{
+  min-height:40em;
+}
 }
 
 

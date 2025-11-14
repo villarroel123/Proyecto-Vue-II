@@ -145,4 +145,31 @@ font-size: 7em;
   box-shadow: 0 10em 10em 0 rgba(0,0,0,0.6);
   border-radius: 1em;
 }
+
+
+
+
+
+/*___MEDIA QUERIES*/ 
+@media (max-width: 800px) {
+  .titulo{
+    font-size: 6em;
+    
+  }
+  .parrafo{
+    font-size: 2.5em;
+  }
+  .datos{
+  flex-direction: column;
+  min-width: 60em;
+}
+
+
+ 
+}
+@media (max-width: 480px) {
+    .titulo{
+    font-size: 4em;
+  }
+}
 </style>
