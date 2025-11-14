@@ -115,7 +115,7 @@ const agregarFav=()=>{
     height: 18em;
     width: 30em;
     bottom: -5em;
-    left: -18em;
+    left: -12em;
   
 }
 .nube3{

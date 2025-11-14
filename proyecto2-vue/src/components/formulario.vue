@@ -334,6 +334,7 @@ min-width: 70em;
 }
 @media (max-width: 600px) {
 .titulo{
+    padding: 1em;
     font-size: 5em;
     width: 100%;
 }

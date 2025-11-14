@@ -210,9 +210,11 @@ const hover5=ref()
   color: var(--color-blanco);
   font-size: 4em;
   margin-bottom: 0.2em;
-
+  cursor: pointer;
 }
-
+.datos-modal i:hover{
+  color: var(--color-violeta);
+}
 .titulo-cancion{
   
     font-size: 4em;
@@ -498,7 +500,9 @@ width: 80%;/*su ancho para margen*/
   position: relative;
   width: 80%;
   min-width: 170em;
+  max-width: 190em;
   height: 65vh;
+  max-height: 70em;
 }
 .button{
   padding: 0.9em 3em;

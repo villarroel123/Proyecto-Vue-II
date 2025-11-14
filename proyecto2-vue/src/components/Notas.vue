@@ -76,7 +76,7 @@ const filtroAnotaciones=ref(false);
 const filtroCanciones=ref(false);
 const filtroFrases=ref(false);
 const opcionTitulo=ref('');
-
+const sinOpcion=ref(true)
 const opcion=(seleccion)=>{
 
 if(seleccion==='Anotaciones'){
@@ -84,17 +84,20 @@ if(seleccion==='Anotaciones'){
     filtroAnotaciones.value=true;
     filtroCanciones.value=false;
     filtroFrases.value=false;
+    sinOpcion.value=false
 }else if(seleccion==='Canciones'){
     opcionTitulo.value=seleccion;
     filtroCanciones.value=true;
     filtroFrases.value=false;
     filtroAnotaciones.value=false;
+    sinOpcion.value=false
 }else{
     opcionTitulo.value=seleccion;
     filtroFrases.value=true;
     filtroAnotaciones.value=false;
-    filtroCanciones.value=false;
-}
+    filtroCanciones.value=false;}
+    sinOpcion.value=false
+
 }
 </script>
 <template>
@@ -120,6 +123,9 @@ if(seleccion==='Anotaciones'){
                     <li class="item"@click="opcion('Frases')">Frases</li>
                 </ul>
                 <h4 class="nombre libre">{{ opcionTitulo }}</h4>
+            </div>
+            <div v-if="sinOpcion" class="sinOpcion libre"> 
+                <p>Ninguna opcion selecionada.</p>
             </div>
 
             <div class="contenedor-registro" v-if="filtroAnotaciones">
@@ -177,6 +183,11 @@ if(seleccion==='Anotaciones'){
 </template>
 
 <style scoped>
+.sinOpcion{
+    font-size: 3em;
+    padding: 1em;
+    color: var(--color-violeta);
+}
 /*--------CANCIONES------ */
 .contenedor-canciones{
    margin: 1em;
@@ -300,6 +311,7 @@ justify-content: space-between;
     border-radius: 2em;
     width: 40%;
     max-width: 80em;
+    min-width: 70em;
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
@@ -529,6 +541,9 @@ justify-content: center;
 .container{
     padding: 2em;
     
+}
+.sinOpcion{
+    font-size: 2em;
 }
 }
 </style>

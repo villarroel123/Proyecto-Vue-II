@@ -123,9 +123,6 @@ flex-direction: column;
 
 
 /*media queries*/
-@media (max-width: 700px) {
-
-}
 
 @media (max-width: 480px) {
 .footer-container p{

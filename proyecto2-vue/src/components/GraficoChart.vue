@@ -97,7 +97,7 @@ const chartOptions = {
 .grafico-container {
  width: 50%;
  min-width: 60em;
- padding: 3em;  
+ padding: 2em;  
  height: 65vh;  
 box-shadow: 0 10em 20em rgba(106, 73, 73, 0.2);
 
