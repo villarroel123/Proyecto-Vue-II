@@ -491,4 +491,44 @@ justify-content: center;
 .circulo img{
     height: 5vh;
 }
+/*___MEDIA QUERIES*/ 
+@media (max-width: 800px) {
+ .item{
+    font-size: 2.5em;  
+}
+.nombre{
+    font-size: 2.5em;
+}
+}
+@media (max-width: 700px) {
+ .item{
+    font-size: 2em;  
+}
+.nombre{
+    display: none;
+}
+
+.datos h4{
+    font-size: 2.5em;
+    margin-top: 2em;
+}
+.dato-h5{
+    font-size: 2em;
+}
+.emocion{
+    font-size: 2em;
+    font-weight: 600; 
+}
+.boton h3{
+    font-size: 2em;
+}
+.contenedor-notas{
+    width: 80%;
+    min-width: 40em;
+}
+.container{
+    padding: 2em;
+    
+}
+}
 </style>

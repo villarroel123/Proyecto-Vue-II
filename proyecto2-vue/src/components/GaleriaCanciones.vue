@@ -196,7 +196,6 @@ const hover5=ref()
 }
 .modal{
   margin-top: 10em;
-  height: 80%;
   width: 40%;
   min-width: 110em;
   border-radius: 2em;
@@ -375,7 +374,7 @@ const hover5=ref()
   overflow: hidden;
   @container (min-width: 20rem) {
     .imagen{
-      height: 45vh;
+      min-height: 45vh;
     }
   }
 }
